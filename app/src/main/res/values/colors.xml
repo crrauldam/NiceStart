@@ -7,4 +7,5 @@
     <color name="emerald">#45C4B0</color>
     <color name="green">#9AEBA3</color>
     <color name="light_green">#DAFDBA</color>
+    <color name="transparent">#00FFFF00</color>
 </resources>

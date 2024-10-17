@@ -82,24 +82,21 @@
 
     <Button
         android:id="@+id/login"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintTop_toBottomOf="@id/til2"
-        android:layout_marginTop="8dp"
         android:text="@string/login"
+        style="@style/ButtonFlat"
         />
 
     <Button
         android:id="@+id/signup"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintEnd_toEndOf="@id/guideline3"
-        app:layout_constraintTop_toBottomOf="@id/login"
-        android:layout_marginTop="8dp"
         android:text="@string/signup"
+        android:onClick="openSignup"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/login"
+        style="@style/ButtonOutlined"
         />
 
     <androidx.constraintlayout.widget.Guideline
