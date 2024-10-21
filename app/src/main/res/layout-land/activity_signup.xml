@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/bgImg"
-        android:layout_width="300dp"
-        android:layout_height="800dp"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
         android:alpha="0.4"
         android:src="@drawable/p3re_fuuka"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,8 +20,8 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
         app:srcCompat="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,14 +36,21 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.2" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        app:layout_constraintEnd_toEndOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineMid"
         app:layout_constraintTop_toBottomOf="@id/logo"
+        android:layout_marginEnd="10dp"
         app:startIconDrawable="@drawable/user"
         >
 
@@ -61,11 +68,11 @@
         android:id="@+id/til2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
         android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMid"
         app:layout_constraintEnd_toEndOf="@+id/guideline3"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/til1"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
         app:startIconDrawable="@drawable/email">
 
         <EditText
@@ -85,9 +92,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/til2"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineMid"
+        app:layout_constraintTop_toBottomOf="@id/til1"
+        android:layout_marginEnd="10dp"
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/key">
 
@@ -108,9 +116,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMid"
         app:layout_constraintEnd_toEndOf="@+id/guideline3"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/til3"
+        app:layout_constraintTop_toBottomOf="@id/til1"
+        android:layout_marginStart="10dp"
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/key">
 
@@ -131,8 +140,8 @@
         android:text="@string/signup"
         android:onClick="goToMain"
         app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintEnd_toEndOf="@id/guideline3"
-        app:layout_constraintTop_toBottomOf="@id/til4"
+        app:layout_constraintEnd_toEndOf="@id/guidelineMid"
+        app:layout_constraintTop_toBottomOf="@id/til3"
         style="@style/ButtonFlat"
         />
 
@@ -140,9 +149,9 @@
         android:id="@+id/cancel"
         android:text="@string/cancel"
         android:onClick="returnToLogin"
+        app:layout_constraintStart_toStartOf="@id/guidelineMid"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
-        app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/signup"
+        app:layout_constraintTop_toBottomOf="@id/til4"
         style="@style/ButtonOutlined" />
 
     <androidx.constraintlayout.widget.Guideline
