@@ -22,7 +22,7 @@
     <ImageView
         android:id="@+id/logo"
         android:layout_width="150dp"
-        android:layout_height="110dp"
+        android:layout_height="100dp"
         app:srcCompat="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,6 +83,7 @@
 
     <Button
         android:id="@+id/login"
+        android:onClick="goToMain"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintTop_toBottomOf="@id/til2"
@@ -94,6 +95,7 @@
         android:id="@+id/signup"
         style="@style/ButtonOutlined"
         android:text="@string/signup"
+        android:onClick="openSignup"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
