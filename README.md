@@ -2,10 +2,10 @@
 
 ## Index
 
-- ### [Design](#design)
-  - #### [Colors](#colors)
-  - #### [Styles](#styles)
-- ### [Layouts](#layouts)
+- ### [App's Design](#design)
+  - #### [Design Colors](#colors)
+  - #### [Component Styles](#styles)
+- ### [App's Layouts](#layouts)
   - #### [Login page](#login)
   - #### [Signup page](#signup)
   - #### [Main page](#main)
