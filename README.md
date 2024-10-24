@@ -105,7 +105,7 @@ is the layout components used for them in order to keep the elements properly di
 
 <br>
 <img src="images/main.PNG" alt="main layout image" width="30%"/>
-<img src="images/main-land.PNG" alt="main land layout image" width="65%"/>
+<img src="images/main-land.PNG" alt="main land layout image" width="60%"/>
 
 
 > For this project I have used images of characters from Persona 3 Reload, which 
