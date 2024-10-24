@@ -1,18 +1,14 @@
 # NiceStart
 
----
-
 ## Index
 
-- ### [Design](#Design)
-  - #### [Colors](#Colors)
-  - #### [Styles](#Styles)
-- ### [Layouts](#Layouts)
-  - #### [Login page](#Login)
-  - #### [Signup page](#Signup)
-  - #### [Main page](#Main)
-
----
+- ### [Design](#design)
+  - #### [Colors](#colors)
+  - #### [Styles](#styles)
+- ### [Layouts](#layouts)
+  - #### [Login page](#login)
+  - #### [Signup page](#signup)
+  - #### [Main page](#main)
 
 ## Design
 NiceStart's design is focused on being simple and responsive, using a blue color palette
@@ -20,7 +16,7 @@ accented with black and white.
 
 ### Colors
 
-> Note: all color names are to reference the names used in the code, they do not necessarily have to be accurate.
+> Note: color names are to reference the ones used in the code, they are not necessarily accurate.
 
 - black <img src="https://placehold.co/15x15/000000/000000.png" alt="black icon"> `#000000`
 - white <img src="https://placehold.co/15x15/FFFFFF/FFFFFF.png" alt="white icon"> `#FFFFFF`
