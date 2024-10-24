@@ -55,10 +55,10 @@ Every page has the app's logotype positioned on the top.
 <br>
 The login page has two inputs, one for the username and another for the password.
 Under them there are positioned two buttons, which will allow the user to complete the login process
-and switch to the signup page, respectively.
-<br>
-<img src="images/login.PNG" alt="login layout image" width="30%"/><img src="images/login-land.PNG" alt="login land layout image" width="60%"/>
-
+and switch to the signup page, respectively.  
+<br><br>
+  
+<img src="images/login.PNG" alt="login layout image" width="30%"/> <img src="images/login-land.PNG" alt="login land layout image" width="60%"/>
 ### Signup
 > Note : see [activity_signup.xml](app/src/main/res/layout/activity_signup.xml) / [activity_signup.xml (land)](app/src/main/res/layout-land/activity_signup.xml)
 
@@ -68,7 +68,9 @@ user to the main page. On the other hand, there is a CANCEL button that will sto
 return the user to the login page.  
 <br>
 It also has an ActionBar that can do the same as the CANCEL button - returning to the login page -.  
-<img src="images/signup.PNG" alt="signup layout image" width="30%"/><img src="images/signup-land.PNG" alt="signup land layout image" width="60%"/>
+<br>
+
+<img src="images/signup.PNG" alt="signup layout image" width="30%"/> <img src="images/signup-land.PNG" alt="signup land layout image" width="60%"/>
 
 
 ### Main
@@ -89,7 +91,7 @@ is the layout components used for them in order to keep the elements properly di
     - pfp
     - username
     - user info
-    - 
+
 #### Portrait hierarchy
 - main
   - background image
@@ -102,8 +104,8 @@ is the layout components used for them in order to keep the elements properly di
         - user info
 
 <br>
-<img src="images/main.PNG" alt="main layout image" width="30%"/><img src="images/main-land.PNG" alt="main land layout image" width="60%"/>
 
+<img src="images/main.PNG" alt="main layout image" width="30%"/> <img src="images/main-land.PNG" alt="main land layout image" width="60%"/>
 
 > For this project I have used images of characters from Persona 3 Reload, which 
 > are the intellectual property of ATLUS Co., Ltd., a division of SEGA Corporation. I fully acknowledge
