@@ -75,29 +75,6 @@ It also has an ActionBar that can do the same as the CANCEL button - returning t
 After completing the login/signup process the user will be sent to the main page, who has an ActionBar and
 the profile of the user, composed by a profile picture, the username and the bio/description the user 
 has.  
-Also it is important to remark a slight difference between the portrait and the landscape layout, which
-is the layout components used for them in order to keep the elements properly displayed:
-
-#### Portrait hierarchy
-- main
-  - background image
-  - logotype
-  - guidelines (vertical and horizontal)
-  - userLayout (vertical)
-    - pfp
-    - username
-    - user info
-
-#### Portrait hierarchy
-- main
-  - background image
-  - logotype
-  - guidelines (vertical and horizontal)
-  - userLayout (vertical)
-    - pfp      
-    - linear layout (horizontal)
-        - username
-        - user info
 
 <br>
 
