@@ -1,18 +1,35 @@
 package com.crraul.nicestart;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+import com.google.android.material.snackbar.Snackbar;
+
+import java.util.Scanner;
 
 public class Main extends AppCompatActivity {
+    private WebView miVisorWeb;
+    private SwipeRefreshLayout swipeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,18 +37,21 @@ public class Main extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        ImageView pfp;
+        WebView mycontext = findViewById(R.id.vistaweb);
+        // contextMenu shows when holding webview
+        registerForContextMenu(mycontext);
 
-        pfp = findViewById(R.id.pfp);
+        // gets reference to swipeRefreshLayout
+        swipeLayout = findViewById(R.id.myswipe);
+        // adds listener
+        swipeLayout.setOnRefreshListener(mOnRefreshListener);
 
-        Glide.with(this)
-                .load("https://static.wikia.nocookie.net/megamitensei/images/a/a5/P3RE_Portrait_Akihiko.png/revision/latest/scale-to-width-down/1000?cb=20240410011711")
-//                .load(R.drawable.p3re_foto)
-                .transition(DrawableTransitionOptions.withCrossFade(500))
-//                .centerCrop()
-                .circleCrop()
-//                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.emerald)))
-                .into(pfp);
+        // get reference and establish settings for webView
+        miVisorWeb = findViewById(R.id.vistaweb);
+        WebSettings webSettings = miVisorWeb.getSettings();
+        webSettings.setLoadWithOverviewMode(true);
+        webSettings.setUseWideViewPort(true);
+        miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -40,4 +60,78 @@ public class Main extends AppCompatActivity {
             return insets;
         });
     }
+
+    // creates the context menu (depends on the place)
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        getMenuInflater().inflate(R.menu.context, menu);
+    }
+
+    // manages item selection of a context menu
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId(); // gets item id
+
+        // checks which option has been selected
+        if (id == R.id.item1) {
+            Toast.makeText(this, "Copy", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.item2) {
+            Toast.makeText(this, "Download", Toast.LENGTH_SHORT).show();
+        }
+
+        return super.onContextItemSelected(item);
+    }
+
+//    assigns the menu to the action bar
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.appbar, menu);
+        return true;
+    }
+
+    // manages item selection of an options menu
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId(); // gets item id
+
+        // checks which option has been selected
+        if (id == R.id.item1) {
+            Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
+
+            final ConstraintLayout layout = findViewById(R.id.main);
+
+            Snackbar snackbar = Snackbar.make(layout, "Has pulsado Settings", Snackbar.LENGTH_SHORT)
+                            .setAction("UNDO", new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    Snackbar snackbar1 = Snackbar.make(layout, "Action is restored", Snackbar.LENGTH_SHORT);
+                                    snackbar1.show();
+                                }
+                            });
+            snackbar.show();
+
+        } else if (id == R.id.item2) {
+            Toast.makeText(this, "Profile", Toast.LENGTH_SHORT).show();
+
+            // sends to the profile view
+            Intent intent = new Intent(Main.this, Profile.class);
+            startActivity(intent);
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    protected SwipeRefreshLayout.OnRefreshListener mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
+        @Override
+        public void onRefresh() {
+
+            final ConstraintLayout layout = findViewById(R.id.main);
+
+            Snackbar snackbar = Snackbar.make(layout, "Fancy a snack while you refresh?", Snackbar.LENGTH_SHORT);
+            snackbar.show();
+
+            miVisorWeb.reload();
+            swipeLayout.setRefreshing(false);
+        }
+    };
 }
