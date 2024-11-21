@@ -1,5 +1,6 @@
 package com.crraul.nicestart;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.graphics.Insets;
@@ -23,6 +25,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.Scanner;
@@ -111,11 +114,7 @@ public class Main extends AppCompatActivity {
             snackbar.show();
 
         } else if (id == R.id.item2) {
-            Toast.makeText(this, "Profile", Toast.LENGTH_SHORT).show();
-
-            // sends to the profile view
-            Intent intent = new Intent(Main.this, Profile.class);
-            startActivity(intent);
+            showAlertDialogButtonClicked(this);
         }
 
         return super.onOptionsItemSelected(item);
@@ -134,4 +133,34 @@ public class Main extends AppCompatActivity {
             swipeLayout.setRefreshing(false);
         }
     };
+
+    public void showAlertDialogButtonClicked(Main mainActivity) {
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
+
+        builder.setTitle("Achtung!");
+        builder.setMessage("Where do you go?");
+        builder.setIcon(R.drawable.user);
+        builder.setCancelable(true);
+
+        // sends to profile activity
+        builder.setPositiveButton("Go to profile", (dialogInterface, i) -> {
+            Toast.makeText(mainActivity, "Enviandote al profile", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(mainActivity, Profile.class);
+            startActivity(intent);
+
+            dialogInterface.dismiss();
+        });
+
+        // does nothing
+        builder.setNegativeButton("Do absolutely nothing", (dialogInterface, i) -> dialogInterface.dismiss());
+
+        // closes
+        builder.setNeutralButton("Other", (dialogInterface, i) -> {
+            System.exit(0);
+            dialogInterface.dismiss();
+        });
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
 }

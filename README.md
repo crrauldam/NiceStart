@@ -45,8 +45,15 @@ be sent after completing one of the previous pages.
 <br>
 Every page has the app's logotype positioned on the top.
 
+### Splash screen
+> Note : see [activity_splash.xml](app/src/main/res/layout/activity_splash.xml)
+
+<video width="30%" autoplay>
+  <source src="videos/splash_screen_recording.webm" type="video/webm">
+</video>
+
 ### Login
-> Note : see [activity_login.xml](app/src/main/res/layout/activity_login.xml) / [activity_signup.xml (land)](app/src/main/res/layout-land/activity_login.xml)
+> Note : see [activity_login.xml](app/src/main/res/layout/activity_login.xml) / [activity_login.xml (land)](app/src/main/res/layout-land/activity_login.xml)
 
 <br>
 The login page has two inputs, one for the username and another for the password.
@@ -55,7 +62,9 @@ and switch to the signup page, respectively.
 <br><br>
   
 <img src="images/login.PNG" alt="login layout image" width="30%"/> <img src="images/login-land.PNG" alt="login land layout image" width="60%"/>
+
 ### Signup
+
 > Note : see [activity_signup.xml](app/src/main/res/layout/activity_signup.xml) / [activity_signup.xml (land)](app/src/main/res/layout-land/activity_signup.xml)
 
 Our signup page is built quite simple, having only a username, email, password and password
