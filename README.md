@@ -48,9 +48,7 @@ Every page has the app's logotype positioned on the top.
 ### Splash screen
 > Note : see [activity_splash.xml](app/src/main/res/layout/activity_splash.xml)
 
-<video width="30%" autoplay>
-  <source src="videos/splash_screen_recording.webm" type="video/webm">
-</video>
+<img src="videos/splash_screen_recording.gif"  alt="splash screen preview GIF" width="30%"/>
 
 ### Login
 > Note : see [activity_login.xml](app/src/main/res/layout/activity_login.xml) / [activity_login.xml (land)](app/src/main/res/layout-land/activity_login.xml)
