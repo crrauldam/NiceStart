@@ -98,8 +98,7 @@ has.
 
 <br>
 
-<img src="images/profile.PNG" alt="profile page image" width="30%"/>
-<img src="images/profile-land.PNG" alt="profile land page image" width="60%"/>
+<img src="images/profile.PNG" alt="profile page image" width="30%"/> <img src="images/profile-land.PNG" alt="profile land page image" width="60%"/>
 
 > For this project I have used images of characters from Persona 3 Reload, which 
 > are the intellectual property of ATLUS Co., Ltd., a division of SEGA Corporation. I fully acknowledge
