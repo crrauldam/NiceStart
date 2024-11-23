@@ -87,8 +87,7 @@ Also has a menu on the ActionBar able to send the user to the profile page via M
 
 <br>
 
-<img src="images/main.png" alt="main page image" width="30%"/>
-<img src="images/mainAlertDialog.png" alt="main page alert dialog image" width="30%"/>
+<img src="images/main.png" alt="main page image" width="30%"/> <img src="images/mainAlertDialog.png" alt="main page alert dialog image" width="30%"/>
 
 ### Profile
 > Note : see [activity_profile.xml](app/src/main/res/layout/activity_profile.xml) / [activity_profile.xml (land)](app/src/main/res/layout-land/activity_profile.xml)
