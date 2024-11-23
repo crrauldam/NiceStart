@@ -1,7 +1,5 @@
 # NiceStart
 
-## Index
-
 - ### [App's Design](#design)
   - #### [Design Colors](#colors)
   - #### [Component Styles](#styles)
@@ -105,10 +103,8 @@ has.
 
 ## Credits
 
-> <hr style="background-color: white">  
->
 > #### Images
-> <hr style="background-color: white">
+> <hr>
 > 
 > For this project I have used images of characters from Persona 3 Reload, which 
 > are the intellectual property of ATLUS Co., Ltd., a division of SEGA Corporation. I fully acknowledge
@@ -120,11 +116,9 @@ has.
 > <br>
 > All rights reserved by ATLUS Co., Ltd.
 > 
-> Also, people shown in the main page are retrieved from https://thispersondoesnotexist.com/
->
-> <hr style="background-color: white">
->
+> Also, people shown in the main page are retrieved from https://thispersondoesnotexist.com/  
+> <br>
 > #### Icons
-> <hr style="background-color: white">
+> <hr>
 >
 > <a href="https://www.flaticon.com/"> <img src="images/flaticon-logo.png" /> </a>
