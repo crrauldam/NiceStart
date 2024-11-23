@@ -6,9 +6,12 @@
   - #### [Design Colors](#colors)
   - #### [Component Styles](#styles)
 - ### [App's Layouts](#layouts)
+  - #### [Splash screen](#splash)
   - #### [Login page](#login)
   - #### [Signup page](#signup)
   - #### [Main page](#main)
+  - #### [Profile page](#profile)
+- ### [Credits](#credits)
 
 ## Design
 NiceStart's design is focused on being simple and responsive, using a blue color palette
@@ -45,7 +48,7 @@ be sent after completing one of the previous pages.
 <br>
 Every page has the app's logotype positioned on the top.
 
-### Splash screen
+### Splash
 > Note : see [activity_splash.xml](app/src/main/res/layout/activity_splash.xml)
 
 Splash screen with tween logo animation and slogan to bring a warm welcome to the user.
@@ -100,6 +103,13 @@ has.
 
 <img src="images/profile.PNG" alt="profile page image" width="30%"/> <img src="images/profile-land.PNG" alt="profile land page image" width="60%"/>
 
+## Credits
+
+> <hr style="background-color: white">  
+>
+> #### Images
+> <hr style="background-color: white">
+> 
 > For this project I have used images of characters from Persona 3 Reload, which 
 > are the intellectual property of ATLUS Co., Ltd., a division of SEGA Corporation. I fully acknowledge
 > that these images, along with all other content related to Persona 3 Reload —including characters, designs,
@@ -109,3 +119,12 @@ has.
 > affiliation with ATLUS is implied.  
 > <br>
 > All rights reserved by ATLUS Co., Ltd.
+> 
+> Also, people shown in the main page are retrieved from https://thispersondoesnotexist.com/
+>
+> <hr style="background-color: white">
+>
+> #### Icons
+> <hr style="background-color: white">
+>
+> <a href="https://www.flaticon.com/"> <img src="images/flaticon-logo.png" /> </a>
