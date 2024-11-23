@@ -48,6 +48,8 @@ Every page has the app's logotype positioned on the top.
 ### Splash screen
 > Note : see [activity_splash.xml](app/src/main/res/layout/activity_splash.xml)
 
+Splash screen with tween logo animation and slogan to bring a warm welcome to the user.
+
 <img src="videos/splash_screen_recording.gif"  alt="splash screen preview GIF" width="30%"/>
 
 ### Login
@@ -59,7 +61,7 @@ Under them there are positioned two buttons, which will allow the user to comple
 and switch to the signup page, respectively.  
 <br><br>
   
-<img src="images/login.PNG" alt="login layout image" width="30%"/> <img src="images/login-land.PNG" alt="login land layout image" width="60%"/>
+<img src="images/login.png" alt="login page image" width="30%"/> <img src="images/login-land.png" alt="login land page image" width="60%"/>
 
 ### Signup
 
@@ -73,19 +75,31 @@ return the user to the login page.
 It also has an ActionBar that can do the same as the CANCEL button - returning to the login page -.  
 <br>
 
-<img src="images/signup.PNG" alt="signup layout image" width="30%"/> <img src="images/signup-land.PNG" alt="signup land layout image" width="60%"/>
-
+<img src="images/signup.png" alt="signup page image" width="30%"/> <img src="images/signup-land.png" alt="signup land page image" width="60%"/>
 
 ### Main
-> Note : see [activity_main.xml](app/src/main/res/layout/activity_main.xml) / [activity_main.xml (land)](app/src/main/res/layout-land/activity_main.xml)
 
-After completing the login/signup process the user will be sent to the main page, who has an ActionBar and
-the profile of the user, composed by a profile picture, the username and the bio/description the user 
-has.  
+> Note : see [activity_main.xml](app/src/main/res/layout/activity_main.xml)
+
+After completing the login/signup process the user will be sent to the main page, which,
+with a SwipeRefreshLayout, is able to reload an image in a WebView.<br><br>
+Also has a menu on the ActionBar able to send the user to the profile page via MaterialAlertDialogBuilder.
 
 <br>
 
-<img src="images/main.PNG" alt="main layout image" width="30%"/> <img src="images/main-land.PNG" alt="main land layout image" width="60%"/>
+<img src="images/main.png" alt="main page image" width="40%"/>
+<img src="images/mainAlertDialog.png" alt="main page alert dialog image" width="40%"/>
+
+### Profile
+> Note : see [activity_profile.xml](app/src/main/res/layout/activity_profile.xml) / [activity_profile.xml (land)](app/src/main/res/layout-land/activity_profile.xml)
+
+After the "Go to profile" option has been selected the user wil be sent to the profile page, which contains
+a profile picture, the username and the bio/description the user
+has.
+
+<br>
+
+<img src="images/profile.png" alt="profile page image" width="30%"/> <img src="images/profile-land.png" alt="profile land page image" width="60%"/>
 
 > For this project I have used images of characters from Persona 3 Reload, which 
 > are the intellectual property of ATLUS Co., Ltd., a division of SEGA Corporation. I fully acknowledge

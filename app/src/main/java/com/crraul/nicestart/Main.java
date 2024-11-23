@@ -1,6 +1,5 @@
 package com.crraul.nicestart;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -9,8 +8,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -23,12 +20,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 
-import java.util.Scanner;
 
 public class Main extends AppCompatActivity {
     private WebView miVisorWeb;
@@ -104,12 +98,9 @@ public class Main extends AppCompatActivity {
             final ConstraintLayout layout = findViewById(R.id.main);
 
             Snackbar snackbar = Snackbar.make(layout, "Has pulsado Settings", Snackbar.LENGTH_SHORT)
-                            .setAction("UNDO", new View.OnClickListener() {
-                                @Override
-                                public void onClick(View view) {
-                                    Snackbar snackbar1 = Snackbar.make(layout, "Action is restored", Snackbar.LENGTH_SHORT);
-                                    snackbar1.show();
-                                }
+                            .setAction("UNDO", view -> {
+                                Snackbar snackbar1 = Snackbar.make(layout, "Action is restored", Snackbar.LENGTH_SHORT);
+                                snackbar1.show();
                             });
             snackbar.show();
 
@@ -144,7 +135,7 @@ public class Main extends AppCompatActivity {
 
         // sends to profile activity
         builder.setPositiveButton("Go to profile", (dialogInterface, i) -> {
-            Toast.makeText(mainActivity, "Enviandote al profile", Toast.LENGTH_SHORT).show();
+            Toast.makeText(mainActivity, "Sending to profile", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(mainActivity, Profile.class);
             startActivity(intent);
 
