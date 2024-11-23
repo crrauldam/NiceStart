@@ -61,7 +61,7 @@ Under them there are positioned two buttons, which will allow the user to comple
 and switch to the signup page, respectively.  
 <br><br>
   
-<img src="images/login.png" alt="login page image" width="30%"/> <img src="images/login-land.png" alt="login land page image" width="60%"/>
+<img src="images/login.PNG" alt="login page image" width="30%"/> <img src="images/login-land.PNG" alt="login land page image" width="60%"/>
 
 ### Signup
 
@@ -75,7 +75,7 @@ return the user to the login page.
 It also has an ActionBar that can do the same as the CANCEL button - returning to the login page -.  
 <br>
 
-<img src="images/signup.png" alt="signup page image" width="30%"/> <img src="images/signup-land.png" alt="signup land page image" width="60%"/>
+<img src="images/signup.PNG" alt="signup page image" width="30%"/> <img src="images/signup-land.PNG" alt="signup land page image" width="60%"/>
 
 ### Main
 
@@ -87,8 +87,8 @@ Also has a menu on the ActionBar able to send the user to the profile page via M
 
 <br>
 
-<img src="images/main.png" alt="main page image" width="40%"/>
-<img src="images/mainAlertDialog.png" alt="main page alert dialog image" width="40%"/>
+<img src="images/main.png" alt="main page image" width="30%"/>
+<img src="images/mainAlertDialog.png" alt="main page alert dialog image" width="30%"/>
 
 ### Profile
 > Note : see [activity_profile.xml](app/src/main/res/layout/activity_profile.xml) / [activity_profile.xml (land)](app/src/main/res/layout-land/activity_profile.xml)
@@ -99,8 +99,8 @@ has.
 
 <br>
 
-<img src="images/profile.png" alt="profile page image" width="30%"/>
-<img src="images/profile-land.png" alt="profile land page image" width="60%"/>
+<img src="images/profile.PNG" alt="profile page image" width="30%"/>
+<img src="images/profile-land.PNG" alt="profile land page image" width="60%"/>
 
 > For this project I have used images of characters from Persona 3 Reload, which 
 > are the intellectual property of ATLUS Co., Ltd., a division of SEGA Corporation. I fully acknowledge
