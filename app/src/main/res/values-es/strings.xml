@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="username">Nombre de usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="confirmPassword">Confirmar Contraseña</string>
+    <string name="login">INICIAR SESIÓN</string>
+    <string name="signup">REGISTRARSE</string>
+    <string name="email">Correo electrónico</string>
+    <string name="cancel">CANCELAR</string>
+    <string name="slogan">Que el poder de la música te acompañe</string>
+    <string name="main">MAIN</string>
+</resources>

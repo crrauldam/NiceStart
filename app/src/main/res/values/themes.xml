@@ -7,11 +7,10 @@
 
     <style name="Theme.NiceStart" parent="Base.Theme.NiceStart">
         <item name="android:windowIsTranslucent">true</item>
-
     </style>
 
-    <style name="Theme.NiceStart.ActionBar" parent="Theme.Material3.DayNight">
+    <style name="Theme.NiceStart.ActionBar" parent="Theme.Material3.DayNight"/>
 
-    </style>
+    <style name="Theme.NiceStart.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
 </resources>

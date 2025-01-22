@@ -96,7 +96,7 @@
         style="@style/ButtonOutlined"
         android:text="@string/signup"
         android:onClick="openSignup"
-        app:layout_constraintBottom_toBottomOf="parent"
+
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/login" />
