@@ -2,8 +2,8 @@
 
 - ### [App's Design](#design)
   - #### [Design Colors](#colors)
-    - ##### [Light theme](#light-theme)
-    - ##### [Dark theme](#dark-theme)
+    - ##### [Light](#light)
+    - ##### [Dark](#dark)
   - #### [Component Styles](#styles)
 - ### [App's Layouts](#layouts)
   - #### [Splash screen](#splash)
@@ -21,7 +21,7 @@ accented with black and white.
 
 ### Colors
 
-#### Light theme
+#### Light
 > Note: see [colors](app/src/main/res/values/colors.xml)  
 > Note: color names are to reference the ones used in the code, they are not necessarily accurate.
 
@@ -31,7 +31,7 @@ accented with black and white.
 - emerald <img src="https://placehold.co/15x15/45C4B0/45C4B0.png" alt="emerald icon"> `#45C4B0` -> to draw user's attention where we want them to look at 
 - transparent `#00FFFF00` -> to make the hollow effect, usually accompanied by a border
 
-#### Dark theme
+#### Dark
 > Note: see [night\colors](app/src/main/res/values-night/colors.xml)
 - black <img src="https://placehold.co/15x15/555555/555555.png" alt="black icon"> `#FF555555`
 - white <img src="https://placehold.co/15x15/AAAAAA/AAAAAA.png" alt="white icon"> `#FFAAAAAA`
