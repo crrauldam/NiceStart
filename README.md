@@ -2,6 +2,8 @@
 
 - ### [App's Design](#design)
   - #### [Design Colors](#colors)
+    - ##### [Day theme](#day-theme)
+    - ##### [Dark theme](#dark-theme)
   - #### [Component Styles](#styles)
 - ### [App's Layouts](#layouts)
   - #### [Splash screen](#splash)
@@ -9,6 +11,8 @@
   - #### [Signup page](#signup)
   - #### [Main page](#main)
   - #### [Profile page](#profile)
+  - #### [Bottom Navigation](#bottom-navigation)
+  - #### [Bottom App Bar](#bottom-app-bar)
 - ### [Credits](#credits)
 
 ## Design
@@ -16,13 +20,22 @@ NiceStart's design is focused on being simple and responsive, using a blue color
 accented with black and white.
 
 ### Colors
-
+#### Day theme
+> Note: see [colors](app/src/main/res/values/colors.xml)  
 > Note: color names are to reference the ones used in the code, they are not necessarily accurate.
 
 - black <img src="https://placehold.co/15x15/000000/000000.png" alt="black icon"> `#000000`
 - white <img src="https://placehold.co/15x15/FFFFFF/FFFFFF.png" alt="white icon"> `#FFFFFF`
 - blue <img src="https://placehold.co/15x15/13678A/13678A.png" alt="blue icon"> `#13678A` -> mainly used for the gradient background
 - emerald <img src="https://placehold.co/15x15/45C4B0/45C4B0.png" alt="emerald icon"> `#45C4B0` -> to draw user's attention where we want them to look at 
+- transparent `#00FFFF00` -> to make the hollow effect, usually accompanied by a border
+
+#### Dark theme
+> Note: see [night\colors](app/src/main/res/values-night/colors.xml)
+- black <img src="https://placehold.co/15x15/555555/555555.png" alt="black icon"> `#FF555555`
+- white <img src="https://placehold.co/15x15/AAAAAA/AAAAAA.png" alt="white icon"> `#FFAAAAAA`
+- blue <img src="https://placehold.co/15x15/0F4C66/0F4C66.png" alt="blue icon"> `#0F4C66` -> mainly used for the gradient background
+- emerald <img src="https://placehold.co/15x15/16A2A2/16A2A2.png" alt="emerald icon"> `#16A2A2` -> to draw user's attention where we want them to look at
 - transparent `#00FFFF00` -> to make the hollow effect, usually accompanied by a border
 
 ### Styles
@@ -100,6 +113,20 @@ has.
 <br>
 
 <img src="images/profile.PNG" alt="profile page image" width="30%"/> <img src="images/profile-land.PNG" alt="profile land page image" width="60%"/>
+
+### Bottom Navigation
+
+> Note : see [activity_main_bn.xml](app/src/main/res/layout/activity_main_bn.xml)
+
+<img src="videos/mainbn_recording.gif"  alt="main bn preview GIF" width="30%"/>
+
+
+### Bottom App Bar
+
+> Note : see [activity_main_bab.xml](app/src/main/res/layout/activity_main_bab.xml)
+
+<img src="images/mainbab.png"  alt="main bab preview image" width="30%"/>
+
 
 ## Credits
 
