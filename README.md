@@ -1,5 +1,6 @@
 # NiceStart
 
+- ### [Locales](#locales)
 - ### [App's Design](#design)
   - #### [Design Colors](#colors)
     - ##### [Light](#light)
@@ -14,6 +15,11 @@
   - #### [Bottom Navigation](#bottomnavigation)
   - #### [Bottom App Bar](#bottomappbar)
 - ### [Credits](#credits)
+
+## Locales
+
+- [English locales](app/src/main/res/values/strings.xml)
+- [Spanish locales](app/src/main/res/values-es/strings.xml)
 
 ## Design
 NiceStart's design is focused on being simple and responsive, using a blue color palette
