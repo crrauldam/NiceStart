@@ -2,7 +2,7 @@
 
 - ### [App's Design](#design)
   - #### [Design Colors](#colors)
-    - ##### [Day theme](#day-theme)
+    - ##### [Light theme](#light-theme)
     - ##### [Dark theme](#dark-theme)
   - #### [Component Styles](#styles)
 - ### [App's Layouts](#layouts)
@@ -20,7 +20,8 @@ NiceStart's design is focused on being simple and responsive, using a blue color
 accented with black and white.
 
 ### Colors
-#### Day theme
+
+#### Light theme
 > Note: see [colors](app/src/main/res/values/colors.xml)  
 > Note: color names are to reference the ones used in the code, they are not necessarily accurate.
 
