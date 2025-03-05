@@ -11,8 +11,8 @@
   - #### [Signup page](#signup)
   - #### [Main page](#main)
   - #### [Profile page](#profile)
-  - #### [Bottom Navigation](#bottom-navigation)
-  - #### [Bottom App Bar](#bottom-app-bar)
+  - #### [Bottom Navigation](#bottomnavigation)
+  - #### [Bottom App Bar](#bottomappbar)
 - ### [Credits](#credits)
 
 ## Design
@@ -115,14 +115,14 @@ has.
 
 <img src="images/profile.PNG" alt="profile page image" width="30%"/> <img src="images/profile-land.PNG" alt="profile land page image" width="60%"/>
 
-### Bottom Navigation
+### BottomNavigation
 
 > Note : see [activity_main_bn.xml](app/src/main/res/layout/activity_main_bn.xml)
 
 <img src="videos/mainbn_recording.gif"  alt="main bn preview GIF" width="30%"/>
 
 
-### Bottom App Bar
+### BottomAppBar
 
 > Note : see [activity_main_bab.xml](app/src/main/res/layout/activity_main_bab.xml)
 
